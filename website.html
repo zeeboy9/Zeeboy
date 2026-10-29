@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-bottom: 0px;
+            background-color: #F6F6F1;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .first-div{
+            display: flex;
+            gap: 338px;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+            background-color: rgba(255, 255, 255, 0.906);
+            height: 70px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            box-shadow: .1px .1px 20px rgba(0, 0, 0, 0.192);
+            backdrop-filter: blur(3px);
+            z-index: 100;
+            width: 99.5%;
+
+        }
+        .second-div{
+            height: 35px;
+            margin-top: 20px;
+            display:flex;
+            
+        }
+        .first-header{
+            color: #d8b07f;
+            margin-top: 10px;
+        }
+        .first-button{
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition:0.5s ease;
+            font-size: 15px;
+            
+        }
+        .first-button:hover{
+            color: #d8b07f;
+            scale: 1.04;
+        }
+        .first-button:active{
+            text-decoration: underline;
+            scale: .8;
+        }
+        .second-button{
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition:0.5s ease;
+        }
+        .second-button:hover{
+            text-decoration: underline;
+            scale: 1.04;
+        }
+           .second-button:active{
+            text-decoration: underline;
+            scale: .8;
+        }
+         .third-button{
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition:0.5s ease;
+        }
+        .third-button:hover{
+            text-decoration: underline;
+            scale: 1.04;
+        }
+           .third-button:active{
+            text-decoration: underline;
+            scale: .8;
+        }
+         .fourth-button{
+            background: none;
+            border: none;
+            cursor: pointer; 
+            transition:0.5s ease;
+        }
+        .fourth-button:hover{
+            text-decoration: underline;
+            scale: 1.04;
+        }
+           .fourth-button:active{
+            text-decoration: underline;
+            scale: .8;
+        }
+        .fifth-button{
+            color: white;
+            background-color: #f0ac69;
+            border-color: #f0ac69;
+            height:35px;
+            margin-top: 20px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 17px;
+            width: 100%;
+            cursor: pointer;
+            transition:0.3s ease;
+        }
+        .fifth-button:hover{
+             scale: 1.04;
+        }
+        .third-div{
+            margin-top: 120px;
+            text-align: center;
+        }
+        .second-header{
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .third-header{
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .sixth-button{
+            width: 15%;
+            height: 45px;
+            color: white;
+            background-color: #f0ac69;
+            border-color: #f0ac69;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition:0.4s ease;
+        }
+        .sixth-button:hover{
+            scale: 1.04;
+            box-shadow: 2px 2px 5px #f0ac69;
+        }
+        .seventh-button{
+            width: 15%;
+            height: 45px;
+            color: #f0ac69;
+            background-color: white;
+            border-color: #f0ac69;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 5px;
+       
+        }
+        .seventh-button:hover{
+            background-color: #ffefdb;
+            border-color: #f0ac69;
+        }
+        .fourth-div{
+            text-align: center;
+            margin-top: 130px;
+
+        }
+        .fourth-header{
+            margin-bottom: 0px;
+            font-size: 37px;
+            font-weight:700;
+        }
+        .fifth-header{
+            margin-top: 10px;
+            font-weight:400;
+            font-size: 15px;
+        }
+        .fifth-div{
+            margin-top: 30px;
+            margin-bottom:50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+             
+            
+           
+        }
+        .first-image{
+            width: 100%;  
+            border-top-right-radius: 7px;  
+            border-top-left-radius: 7px;
+            transition: .8s ease; 
+            
+        }
+        .first-image:hover{
+            transform: scale(1.05);
+        }
+        .sixth-div{
+            margin-top: 20px;
+            width: 97%;
+            position: relative;
+             border-top-right-radius: 9.5px;  
+             border-top-left-radius: 9.5px; 
+             border-bottom-right-radius: 9.5px;  
+             border-bottom-left-radius: 9.5px; 
+             margin-left: 5px; 
+             background-color: white;
+             margin-left: 10px;
+             rotate: -.8deg;
+             margin-bottom: 10px;
+        }
+        .overflow{
+              overflow: hidden;
+              height: 260px;
+            border-top-right-radius: 7px;  
+            border-top-left-radius: 7px;
+        }
+        .eight-button{
+            position: absolute;
+            top:5px;
+            left: 280px;
+            background-color: #f0ac69;
+            border-color: #f0ac69;
+            color:white;
+            height:35px;
+            width: 27%;
+            font-size: 15px;
+            border-radius: 18px;
+        }
+        .sixth-header{
+            color:#f0ac69;
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+        .seventh-header{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            margin-top: 5px;
+
+        }
+        .eight-header{
+            font-size: 17px;
+            font-weight: 400;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .ninth-header{
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 5px; 
+            margin-left: 10px;  
+        }
+        .tenth-header{
+            font-size: 16px;
+            font-weight: 350;
+            margin-top: 5px;  
+            margin-left: 10px;
+            margin-bottom: 10px;    
+        }
+        .ninth-button{
+           background-color: #d1ffd17f;
+            border: none;
+            color:#A8D5BA;
+            border-radius: 10px;
+            width: 120px;
+            height: 27px;
+            margin-top: 4px;
+            font-size:13px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .seventh-div{
+            margin-top: 20px;
+            width: 99%;
+            position: relative;
+             border-top-right-radius: 9.5px;  
+             border-top-left-radius: 9.5px; 
+             border-bottom-right-radius: 9.5px;  
+             border-bottom-left-radius: 9.5px; 
+             margin-left: 5px; 
+             background-color: white;
+             margin-left: 10px;
+             rotate: .8deg;
+             margin-bottom: 10px;
+ 
+        }
+        .eight-div{
+            text-align: center;
+            margin-top: 100px;
+        }
+        .eleventh-header{
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        .twelve-header{
+            font-size: 20px;
+            font-weight:350;
+
+        }
+        .ninth-div{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:20px;
+        }
+        .tenth-div{
+            text-align:center;
+            border: 6px solid black;
+            border-radius:50px;
+            margin-top:10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-color: white;
+            width: 99%;
+            height: 200px;
+            box-shadow:  1px 6px 10px rgba(0, 0, 0, 0.08) ;
+            transition:.3s ease;
+        }
+        .tenth-div:hover{
+            scale: 1.04;
+        }
+        .fourteen-header{
+            font-size: 20px;
+        }
+        .thirteen-header{
+            margin-bottom: 0px;
+            font-size: 30px;
+            margin-top: 2px;
+        }
+        .fifthteen-header{
+            font-size: 13px;
+            font-weight: 350;
+        }
+        .eleventh-div{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color:#e7e2d137;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            height: 200px;
+            align-items: center;
+        }
+        .twelve-div{
+            text-align: center;
+            margin-left: 0px;
+
+        }
+        .sixteen-header{
+            color:#f0ac69 ;
+            font-weight: 900;
+            margin-bottom: 0px;
+            font-size: 37px;
+        }
+        .seventeen-header{
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .thirteen-div{
+            text-align:center;
+            margin-top: 150px;
+            margin-left: 30px;
+
+        }
+        .first-input{
+            height: 45px;
+            width: 25%;
+            border-radius:37px;
+            border: solid rgb(232, 213, 196);
+            padding-left: 7px;
+            box-sizing: border-box;
+            margin-left: 10px;
+
+        }
+        .fifteen-div{
+            text-align: left;
+            width: 90%;
+            background-color: white;
+            border-radius: 25px;
+            padding: 10px 10px;
+            height: 250px;
+        }
+        .seventeen-div{
+           display:grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            margin-left: 20px;
+        }
+        .extra-header{
+            font-size: 15px;
+            font-weight: 350;
+        }
+        .second-input{
+            width:50%;
+            height: 50px;
+            border-radius:37px;
+            border: solid rgb(232, 213, 196);
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+        textarea {
+        width: 50%;
+        height: 120px;
+        resize: none; 
+        border: solid rgb(232, 213, 196);
+        border-radius: 15px;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    .first-textarea{
+        margin-top: 20px;
+        
+    }
+    .sixteen-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 70px;
+        
+    }
+    .eighteen-div{
+        text-align: left;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        width: 59%;
+        
+    }
+    .second-extra-header{
+        font-size: 20px;
+        color: white;
+    }
+    .third-extra-header{
+      color: rgba(255, 255, 255, 0.441);  
+      font-size: 15px;
+      font-weight: 350;
+      transition: .6s ease;
+      padding: 0;
+    }
+    .third-extra-header:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .ninteen-div{
+        border: solid white;
+        border-width:.1px;
+        margin-bottom: 0px;
+        height:190px;
+        
+    }
+    .twenty-div{
+       background-color: rgb(45, 37, 32);  
+       width: 100%;
+       margin-left: 0;
+       margin-bottom: 0px;
+    }
+    hr{
+        width:95%;
+        opacity: 30%;
+        margin-top: 0px;
+    }
+    .last-header{
+      color: rgba(255, 255, 255, 0.785);  
+      font-size: 15px;
+      font-weight: 350;  
+    }
+    .last-div{
+        text-align: center;
+        margin-top: 30px;
+    }
+@media (max-width: 768px) {
+            body{
+            place-items: center;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            background-color: #F6F6F1;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .first-div{
+            display: flex;
+            gap: 100%;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+            background-color: rgba(255, 255, 255, 0.906);
+            height: 45px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            box-shadow: .1px .1px 20px rgba(0, 0, 0, 0.178);
+            backdrop-filter: blur(7px);
+            z-index: 100;
+          width:98%;
+
+        }
+        .second-div{
+            height: 35px;
+            margin-top: 20px;
+            display:flex;
+
+            
+        }
+        .first-header{
+            color: #d8b07f;
+            margin-top: 10px;
+        }
+        .first-button{
+         display: none;
+        }
+        .second-button{
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition:0.5s ease;
+        }
+         .third-button{
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition:0.5s ease;
+        }
+         .fourth-button{
+            background: none;
+            border: none;
+            cursor: pointer; 
+            transition:0.5s ease;
+        }
+        .fifth-button{
+            color: white;
+            background-color: #f0ac69;
+            border-color: #f0ac69;
+            height:35px;
+            margin-top: 20px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 17px;
+            width: 100%;
+            cursor: pointer;
+            transition:0.3s ease;
+        }
+        .third-div{
+            margin-top: 120px;
+            text-align: center;
+            width: 92%;
+        }
+        .second-header{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .third-header{
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .sixth-button{
+            width: 59%;
+            height: 45px;
+            color: white;
+            background-color: #f0ac69;
+            border-color: #f0ac69;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition:0.4s ease;
+            margin-bottom: 10px;
+        }
+        .seventh-button{
+            width: 59%;
+            height: 45px;
+            color: #f0ac69;
+            background-color: white;
+            border-color: #f0ac69;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 5px;
+       
+        }
+        .fourth-div{
+            text-align: center;
+            margin-top: 130px;
+            width: 90%;
+
+
+        }
+        .fourth-header{
+            margin-bottom: 0px;
+            font-size: 30px;
+            font-weight:700;
+        }
+        .fifth-header{
+            margin-top: 10px;
+            font-weight:400;
+            font-size: 15px;
+        }
+        .fifth-div{
+            margin-top: 30px;
+            margin-bottom:50px;
+            display: grid;
+            grid-template-columns: 1fr;    
+           
+        }
+        .first-image{
+            width: 99%;  
+            border-top-right-radius: 7px;  
+            border-top-left-radius: 7px;
+            transition: .8s ease; 
+            
+        }
+        .first-image:hover{
+            transform: scale(1.05);
+        }
+        .sixth-div{
+            margin-top: 20px;
+            width: 95%;
+            position: relative;
+             border-top-right-radius: 9.5px;  
+             border-top-left-radius: 9.5px; 
+             border-bottom-right-radius: 9.5px;  
+             border-bottom-left-radius: 9.5px; 
+             background-color: white;
+             margin-bottom: 10px;
+        }
+        .overflow{
+              overflow: hidden;
+              height: 260px;
+            border-top-right-radius: 7px;  
+            border-top-left-radius: 7px;
+        }
+        .eight-button{
+            position: absolute;
+            top:5px;
+            left: 260px;
+            background-color: #f0ac69;
+            border-color: #f0ac69;
+            color:white;
+            height:35px;
+            width: 100px;
+            font-size: 15px;
+            border-radius: 18px;
+        }
+        .sixth-header{
+            color:#f0ac69;
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+        .seventh-header{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            margin-top: 5px;
+
+        }
+        .eight-header{
+            font-size: 17px;
+            font-weight: 400;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .ninth-header{
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 5px; 
+            margin-left: 10px;  
+        }
+        .tenth-header{
+            font-size: 16px;
+            font-weight: 350;
+            margin-top: 5px;  
+            margin-left: 10px;
+            margin-bottom: 10px;    
+        }
+        .ninth-button{
+           background-color: #d1ffd17f;
+            border: none;
+            color:#A8D5BA;
+            border-radius: 10px;
+            width: 30%;
+            height: 27px;
+            margin-top: 4px;
+            font-size:13px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .seventh-div{
+            margin-top: 20px;
+            width: 95%;
+            position: relative;
+             border-top-right-radius: 9.5px;  
+             border-top-left-radius: 9.5px; 
+             border-bottom-right-radius: 9.5px;  
+             border-bottom-left-radius: 9.5px; 
+             background-color: white;
+             margin-bottom: 10px;
+ 
+        }
+        .eight-div{
+            text-align: center;
+            margin-top: 100px;
+            width: 99%;
+        }
+        .eleventh-header{
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        .twelve-header{
+            font-size: 13px;
+            font-weight:350;
+
+        }
+ 
+        .ninth-div{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap:20px;
+          place-items:center;
+        }
+        .tenth-div{
+            text-align:center;
+            border:solid black;
+            border-radius:50px;
+            margin-top:10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border-color: white;
+            width: 80%;
+            height: 200px;
+            box-shadow:  1px 6px 10px rgba(0, 0, 0, 0.08) ;
+            transition:.3s ease;
+        }
+        .tenth-div:hover{
+            scale: 1.04;
+        }
+        .fourteen-header{
+            font-size: 20px;
+        }
+        .thirteen-header{
+            margin-bottom: 0px;
+            font-size: 30px;
+        }
+        .fifthteen-header{
+            font-size: 13px;
+            font-weight: 350;
+        }
+        .eleventh-div{
+            display:grid;
+            grid-template-columns: 1fr 1fr ;
+            background-color:#e7e2d137;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            height: 250px;
+            align-items: center;
+            width: 95%;
+        }
+        .twelve-div{
+            text-align: center;
+
+        }
+        .sixteen-header{
+            color:#f0ac69 ;
+            font-weight: 900;
+            margin-bottom: 0px;
+            font-size: 37px;
+        }
+        .seventeen-header{
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .thirteen-div{
+            text-align:center;
+            margin-top: 150px;
+     
+
+        }
+        .first-input{
+            height: 35px;
+            width: 47%;
+            border-radius:37px;
+            border: solid rgb(232, 213, 196);
+            padding-left: 7px;
+            box-sizing: border-box;
+            margin-left: 5px;
+            margin-top: 10px;
+
+        }
+        .fifteen-div{
+            text-align: left;
+            width: 89%;
+            background-color: white;
+            border-radius: 25px;
+            padding: 10px 10px;
+            height: 200px;
+        }
+        .seventeen-div{
+           display:grid;
+            grid-template-columns: 1fr ;
+            gap:20px;
+        }
+        .extra-header{
+            font-size: 15px;
+            font-weight: 350;
+        }
+        .second-input{
+            width:47%;
+            height: 35px;
+            border-radius:37px;
+            border: solid rgb(232, 213, 196);
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+        textarea {
+        width: 80%;
+        height: 120px;
+        resize: none; 
+        border: solid rgb(232, 213, 196);
+        border-radius: 15px;
+        font-size: 16px;
+        padding: 10px 10px;
+        margin-left: -10px;
+    }
+    .first-textarea{
+        margin-top: 20px;
+        
+    }
+    .sixteen-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 70px;
+        margin-left: -5px;
+        
+    }
+    .eighteen-div{
+        text-align: left;
+  
+        margin-bottom: 20px;
+        width: 59%;
+        height: auto;
+        
+    }
+    .second-extra-header{
+        font-size: 20px;
+        color: white;
+    }
+    .third-extra-header{
+      color: rgba(255, 255, 255, 0.441);  
+      font-size: 15px;
+      font-weight: 350;
+      transition: .6s ease;
+      padding: 0;
+    }
+    .third-extra-header:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .ninteen-div{
+        border: solid white;
+        border-width:.1px;
+        margin-bottom: 0px;
+        height:190px;
+        
+    }
+    .twenty-div{
+       background-color: rgb(45, 37, 32);  
+       width:100%;
+       margin-left: -15px;
+       margin-bottom: 0px;
+    }
+    hr{
+        width:95%;
+        opacity: 30%;
+        margin-top: 0px;
+    }
+    .last-header{
+      color: rgba(255, 255, 255, 0.785);  
+      font-size: 15px;
+      font-weight: 350;  
+    }
+    .last-div{
+        text-align: center;
+        margin-top: 30px;
+    }  
+    }
+    </style>
+</head>
+<body>
+    <div class="first-div">
+        <h1 class="first-header">LuxeEstate</h1>
+        <div class="second-div">
+            <a href="#properties"><button class="first-button">Properties</button></a>
+            <a href="#features"><button class="first-button">Features</button></a>
+            <a href="#testimonial"><button class="first-button">Testimonial</button></a>
+            <a href="#contact"><button class="first-button">Contact</button></a>
+        </div>
+        <button class="fifth-button">Get Started</button>
+    </div>
+    <div class="third-div">
+        <h2 class="second-header">Find Your Dream Home Today </h2>
+        <h2 class="third-header">Discover luxirious properties with stunning designs,premium location, and modern<br> amenities.Your perfect home await </h2><br>
+        <button class="sixth-button">Explore properties</button>
+        <button class="seventh-button">Schedule Tour</button>   
+    </div>
+    <section id="properties">
+    <div class="fourth-div">
+     <h2 class="fourth-header">Featured Properties</h2>
+     <h2 class="fifth-header">Handpicked luxury homes in the most desirable locations</h2>
+    </div>
+    
+          <div class="fifth-div">
+        <div class="sixth-div">
+            <div class="overflow"> <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="" class="first-image"></div>
+            <button class="eight-button">$4,250,000</button>
+            <h2 class="sixth-header">$4,250,000</h2>
+            <h2 class="seventh-header">Luxerious Modern Villa</h2>
+            <h2 class="eight-header">Beverly Hills, Califonia</h2>
+            <h2 class="ninth-header">🛏️ 5 Beds 🚿4 Baths 📐 6,500 sqft</h2>
+            <h2 class="tenth-header">Stunning modern villa with paranomic city views, infinity pools, and smart home automation</h2>
+            <div>
+                <button class="ninth-button">Smart Home </button>
+                <button class="ninth-button">Infinity Pool</button>
+                <button class="ninth-button">Panoramic Views</button>
+                <button class="ninth-button">Wine Cellar</button>
+            </div>
+        </div>
+        <div class="seventh-div">
+            <div class="overflow"><img src="https://plus.unsplash.com/premium_photo-1733320822557-e4ccfb5f20d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGVudGhvdXNlfGVufDB8fDB8fHww" alt="" class="first-image"></div>
+            <button class="eight-button">$5,800,000</button>
+            <h2 class="sixth-header">$5,800,000</h2>
+            <h2 class="seventh-header">Contempory Penthouse</h2>
+            <h2 class="eight-header">Manhattan, Newyork</h2>
+            <h2 class="ninth-header">🛏️ 4 Beds 🚿3 Baths 📐 5,200 sqft</h2>
+            <h2 class="tenth-header">Exclusive penthouse with floor-to-ceiling windows and private terrace overlooking Cenral park.</h2>
+            <div>
+                <button class="ninth-button">Central Park View </button>
+                <button class="ninth-button">Private Terrace</button>
+                <button class="ninth-button">Concierge</button>
+                <button class="ninth-button">Gym Access</button>
+            </div>
+        </div>
+        <div class="sixth-div">
+            <div class="overflow"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&h=400&fit=crop" alt="" class="first-image"></div>
+            <button class="eight-button">$3,900,000</button>
+            <h2 class="sixth-header">$3,900,000</h2>
+            <h2 class="seventh-header">Beachfront Estate</h2>
+            <h2 class="eight-header">Malibu, California</h2>
+            <h2 class="ninth-header">🛏️ 4 Beds 🚿3 Baths 📐 5,800 sqft</h2>
+            <h2 class="tenth-header">Breathtaking beachfront property with direct ocean access, sunset views, and private beach.</h2>
+            <div>
+                <button class="ninth-button">Private Beach </button>
+                <button class="ninth-button">Ocean View</button>
+                <button class="ninth-button">Sunset Terrace</button>
+                <button class="ninth-button">Heated Pool</button>
+            </div>
+        </div>
+        <div class="sixth-div">
+            <div class="overflow"><img src="https://images.unsplash.com/photo-1625163865002-c3563a586b95?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="first-image"></div>
+            
+            <button class="eight-button">$2,100,000</button>
+            <h2 class="sixth-header">$2,100,000</h2>
+            <h2 class="seventh-header">Historic Townhouse</h2>
+            <h2 class="eight-header">Beverly Hills, Califonia</h2>
+            <h2 class="ninth-header">🛏️ 3 Beds,🚿 2 Baths,📐 3,200 sqft</h2>
+            <h2 class="tenth-header">Charming restored brownstone with original hardwood floors and modern amenities.</h2>
+            <div>
+                <button class="ninth-button">Hard Floors </button>
+                <button class="ninth-button">Garden</button>
+                <button class="ninth-button">Fireplace</button>
+                <button class="ninth-button">Rooftop Access</button>
+            </div>
+        </div>
+        <div class="seventh-div">
+           <div class="overflow"> <img src="https://images.unsplash.com/photo-1696861080288-0cc2f1cd48d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdW50YWluJTIwcmV0cmVhdCUyMGludGVyaXJvcnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="first-image"></div>
+            <button class="eight-button">$3,500,000</button>
+            <h2 class="sixth-header">$3,500,000</h2>
+            <h2 class="seventh-header">Mountain Retreat</h2>
+            <h2 class="eight-header">Aspen, Colorado</h2>
+            <h2 class="ninth-header">🛏️ 5 Beds,🚿 4 Baths,📐 7,000 sqft</h2>
+            <h2 class="tenth-header">Exclusive penthouse with floor-to-ceiling windows and private terrace overlooking Cenral park.</h2>
+            <div>
+                <button class="ninth-button">Ski-in Access </button>
+                <button class="ninth-button">Stone Fireplace</button>
+                <button class="ninth-button">Alpine Views</button>
+                <button class="ninth-button">Hot Tub</button>
+            </div>
+        </div>
+        <div class="sixth-div">
+            <div class="overflow"><img src="https://plus.unsplash.com/premium_photo-1682125919133-484f50cfa51d?q=80&w=960&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="first-image"></div>
+            <button class="eight-button">$1,850,000</button>
+            <h2 class="sixth-header">$1,850,000</h2>
+            <h2 class="seventh-header">Urban Loft</h2>
+            <h2 class="eight-header">Los Angeles, California</h2>
+            <h2 class="ninth-header">🛏️ 2 Beds,🚿 2 Baths,📐 2,800 sqft</h2>
+            <h2 class="tenth-header">Breathtaking beachfront property with direct ocean access, sunset views, and private beach.</h2>
+            <div>
+                <button class="ninth-button">High Cellings </button>
+                <button class="ninth-button">Exposed Brick</button>
+                <button class="ninth-button">City Views</button>
+                <button class="ninth-button">Parking</button>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+     <section id="features">
+        <div class="eight-div">
+            <h2 class="eleventh-header">Why Choose LuxeEstate</h2>
+            <h2 class="twelve-header">We provide comprehensive real estate solutions for your needs</h2>
+        </div>
+       
+            <div  class="ninth-div">
+            <div  class="tenth-div">
+                 <h2 class="thirteen-header">👥</h2>
+                 <h2 class="fourteen-header">Expert Agents</h2>
+                 <h2 class="fifthteen-header">Our team of experienced real estate professionals are dedicated to <br>finding your dream home.</h2>
+            </div>
+             <div  class="tenth-div">
+                 <h2 class="thirteen-header">📊</h2>
+                 <h2 class="fourteen-header">Market Insights</h2>
+                 <h2 class="fifthteen-header">Access real-time market data and trends to make informed investment decisions.</h2>
+            </div>
+             <div  class="tenth-div">
+                 <h2 class="thirteen-header">🎥</h2>
+                 <h2 class="fourteen-header">Virtual Tours</h2>
+                 <h2 class="fifthteen-header">Explore properties from anywhere <br>with our immersive 360-degree <br>virtual tours.</h2>
+            </div>
+             <div  class="tenth-div">
+                 <h2 class="thirteen-header">💰</h2>
+                 <h2 class="fourteen-header">Financing Help</h2>
+                 <h2 class="fifthteen-header">Connect with trusted lenders to<br> explore flexible financing options for<br> your purchase.</h2>
+            </div>
+        </div>
+        </section>
+                <div class="eleventh-div">
+            <div class="twelve-div">
+                <h2 class="sixteen-header"> 0+</h2>
+                <h2 class="seventeen-header">Properties Sold</h2>
+            </div>
+             <div class="twelve-div">
+                <h2 class="sixteen-header"> 0+</h2>
+                <h2 class="seventeen-header">Happy Client</h2>
+            </div>
+             <div class="twelve-div">
+                <h2 class="sixteen-header"> 0+</h2>
+                <h2 class="seventeen-header">Years Experience</h2>
+            </div>
+             <div class="twelve-div">
+                <h2 class="sixteen-header"> 0+</h2>
+                <h2 class="seventeen-header">Expert Agents</h2>
+            </div>    
+        </div>
+        <section id="testimonial">
+            <div>
+            <div class="thirteen-div">
+            <h2 class="eleventh-header">Client Testimonial</h2>
+            <h2 class="twelve-header">Hear from our satisfied client about their experience</h2>
+        </div>
+        <div class="seventeen-div">
+         <div class="fifteen-div">
+                 <h2 class="thirteen-header">⭐⭐⭐⭐⭐</h2>
+                 <h2 class="extra-header">"LuxeEstate made finding our dream home effortless. The team was incredibly professional and supportive throughout the entire process."</h2>
+                 <h2 class="fourteen-header">Sarah Johnson</h2>
+                 <h2 class="seventeen-header">Homeowner</h2>
+            </div>
+             <div class="fifteen-div">
+                 <h2 class="thirteen-header">⭐⭐⭐⭐⭐</h2>
+                 <h2 class="extra-header">"The market insights and property analytics provided by LuxeEstate have been invaluable for my investment portfolio."</h2>
+                 <h2 class="fourteen-header">Micheal Chen</h2>
+                 <h2 class="seventeen-header">Investor</h2>
+            </div>
+             <div class="fifteen-div">
+                 <h2 class="thirteen-header">⭐⭐⭐⭐⭐</h2>
+                 <h2 class="extra-header">"As a first-time buyer, I was nervous, but the team guided me through every step with patience and expertise."</h2>
+                 <h2 class="fourteen-header">Emily Rodriguez</h2>
+                 <h2 class="seventeen-header">First-Time Buyer</h2>
+            </div>
+
+        </div>
+        </section>
+        <section id="contact">
+            <div class="thirteen-div">
+            <h2 class="eleventh-header">Get in Touch</h2>
+            <h2 class="twelve-header">Ready to find your dream home today?Contact our team today.</h2>
+            <input type="text" placeholder=" Your Name" class="first-input">
+            <input type="text" placeholder=" Your Email" class="first-input"><br>
+            <input type="text" placeholder=" Property Intrest" class="second-input"><br>
+        <div class="first-textarea">
+        <textarea placeholder="Your message" ></textarea>
+        </div><br>
+            <button class="sixth-button">Send Message</button>
+
+        </div>
+        </section>
+        <div class="twenty-div">
+            <div class="sixteen-div">
+            <div class="eighteen-div">
+                <h2 class="second-extra-header">LuxeEstate</h2>
+                <h2 class="third-extra-header">Premium real estate solutions for your<br> dream home.</h2>
+            </div>
+            <div class="eighteen-div">
+                <h2 class="second-extra-header">Quick Links</h2>
+                <h2 class="third-extra-header">Properties</h2>
+                <h2 class="third-extra-header">About us</h2>
+                <h2 class="third-extra-header">Contact</h2>
+            </div>
+            <div class="eighteen-div">
+                <h2 class="second-extra-header">Resoures</h2>
+                <h2 class="third-extra-header">Blog</h2>
+                <h2 class="third-extra-header">Market Insight</h2>
+                <h2 class="third-extra-header">FAQ</h2>
+            </div>
+            <div class="eighteen-div">
+                <h2 class="second-extra-header">Contact</h2>
+                <h2 class="third-extra-header">📧zeeboy9.91@gmail.com</h2>
+                <h2 class="third-extra-header">📞+234 8034104323</h2>
+                <h2 class="third-extra-header">📍Nigeria</h2>
+            </div>
+           
+        </div>
+        <hr>
+        <div class="last-div">
+            <h2 class="last-header">© 2026 LuxeEstate. All rights reserved.</h2>
+        </div>
+        </div>        
+</body>
+</html>
