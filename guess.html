@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{
+            background: #0b1020;
+            place-items: center;
+        }
+        .first-div{
+            background-color:rgba(255, 255, 255, 0.05);
+            border-style: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            height: 450px;
+            margin-top:50px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+        .first-button{
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: 900;
+            margin-top: 5px;
+            margin-bottom:0px;
+            border-width:1px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6,#22d3ee);
+            border-color:linear-gradient(90deg, #3b82f6, #8b5cf6,#22d3ee);
+        }
+        .first-header{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color:white;
+        }
+        .second-header{
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            color:gray;
+            font-weight:100;
+        }
+        .third-header{
+            margin-top: 5px;
+            margin-bottom: 0px;
+            font-size: 15px;
+            color:gray;
+        }
+        .second-div{
+            border-style:solid;
+            border-color: black;
+            height:40px;
+            display: flex;
+            flex-direction: row;
+            width: 330px;
+            margin-left: 5px;
+            border-radius: 30px;
+            border-color: rgba(255, 255, 255, 0.055);
+            margin-top: 0px;
+            border-width: 1px;
+        }
+        .fourth-header{
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        .second-button{
+            height:30px;
+            margin-left: 20px;
+            margin-right: 0px;
+            margin-top: 5px;
+            background-color:rgba(255, 255, 255, 0.05);
+            border-style: rgba(255, 255, 255, 0.01);
+            color: white;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+        input{
+            margin-top: 10px;
+            width: 330px;
+            height:30px;
+            margin-left: 5px;
+            border-radius: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background:  rgba(255, 255, 255, 0.08);
+            border:  rgba(255, 255, 255, 0.08);
+            color: white;
+        }
+        .third-button{
+            margin-top: 10px;
+            width: 330px;
+            margin-left:10px;
+            height: 40px;
+            background: linear-gradient(90deg,  #3b82f6,#8b5cf6);
+            border-color:linear-gradient(90deg, #3b82f6, #22d3ee,#8b5cf6);
+            border-width:1px;
+            color:white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .third-button:hover{
+           background: linear-gradient(90deg,  #3b83f671,#8a5cf6d3); 
+           scale: 1.01;
+        }
+        .third-div{
+            text-align: center;
+        }
+        .fourth-div{
+            margin-top: 30px;
+            border-style: solid;
+            height: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:20px;
+            width: 300px;
+            margin-left:25px;
+            background:#3b83f61c;
+            border-color:#3b83f608;
+            border-radius: 5px;
+            margin-bottom: 0;
+           
+            
+        }
+        .fourth-header{
+            font-size: 15px;
+            margin-bottom:0px;
+            margin-top: 13px;
+            color:white;
+
+        }
+        .fifth-header{
+            margin-top: 0px;
+             color:#34d399;
+             font-size: 30px;
+        }
+        #trophy{
+            font-size: 16px;
+            color:#34d399;
+
+        }
+        .footer-div{
+     text-align:center; 
+            display: flex;
+            flex-direction: column;
+            margin-top: 3px;
+            border-right-color: rgba(255, 255, 255, 0.05);
+            border-right-style:solid;
+       height:50px;
+        
+            
+
+        }
+        .second-footer-div{
+        display: flex;
+        flex-direction: column;   
+        text-align:center;
+        
+        }
+        #bar{
+            
+            color: #facc15;
+        }
+        #heart{
+            
+            color: #fb7185;
+        }
+        .sixth-header{
+            font-size:30px;
+            margin-top: 0px;
+            color: #facc15;
+        }
+        .seventh-header{
+            margin-top: 0px;
+             color: #fb7185;
+             font-size:30px; 
+             margin-bottom: 0px;
+        }
+        .one{
+            color:#3b82f6;
+        }
+        .hundred{
+            color:#8b5cf6;
+        }
+        .eight-header{
+            font-size: 10px;
+            margin-bottom: 0px;
+            color:white;
+        }
+        .tenth-header{
+          font-size: 20px;
+         margin-bottom: 0px;  
+         margin-top: 0px;
+         color:#facc15;
+        }
+        hr{
+            opacity: 20%;
+            color:white;
+            width: 300px;
+        }
+        .last-div{
+            font-size: 20px;
+            color:#8b5cf6;
+            position:absolute;
+            top: 220px;
+            left: 280px;
+            border-left-color: rgba(255, 255, 255, 0.116);
+            border-style: solid;
+            border-right: none;
+            border-bottom:none;
+            border-top: none;
+            padding-left: 20px;
+
+        }
+        .first-dot{
+            font-size:30px; 
+            color:#34d399;  
+            position: absolute;
+            top: 0px;  
+            left: 100px;   
+        }
+        .plus{
+            font-size:20px; 
+            color:white;  
+            position: absolute;
+            top: -10px;  
+            left: 110px;  
+            color: #8b5cf6; 
+        }
+        .second-dot{
+            font-size:30px;  
+            position: absolute;
+            top: -30px;  
+            left: 240px;  
+            color:#22d3ee; 
+        }
+        .third-dot{
+          font-size:30px;   
+            position: absolute;
+            top: 0px;  
+            left: 220px;  
+            color:#facc15;    
+        }
+        #reset{
+            position: absolute;
+            top: 7px;
+            left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="first-div" >
+        <div class="third-div" >
+        <button class="first-button">?</button>
+        <h1 class="first-header">Guess the number</h1>
+        <h2 class="second-header">i have chosen a number between</h2>
+        <h2 class="third-header"><span class="one">1</span> and <span class="hundred">100</span></h2>
+        </div>
+        <hr>
+        <div class="second-div"><button class="second-button"><i class="fa-solid fa-bullseye" id="arrow"></i></button><h2 class="fourth-header">Your Guess: <span id="guess"></span></h2></div>
+        <input type="text" placeholder=" Enter your number...." id="input">
+        <button class="third-button" id="button">Submit Guess <i class="fa-solid fa-arrow-right" id="arrow"></i></button>
+        <div class="fourth-div">
+            <div class="footer-div">
+                <i class="fa-solid fa-trophy" id="trophy"></i>
+                <h2 class="eight-header">Score</h2>
+                <h2 class="fifth-header" id="score">0</h2>
+            </div>
+             <div class="footer-div">
+                <i class="fa-jelly fa-regular fa-chart-bar" id="bar"></i>
+                <h2 class="eight-header">Attempts</h2>
+                <h2 class="sixth-header" id="attempt">0</h2>
+        </div>
+             <div class="second-footer-div">
+              <i class="fa-regular fa-heart" id="heart"></i>
+                <h2 class="eight-header">Best Score</h2>
+                <h2 class="seventh-header" id="best">0 </h2>
+        </div>
+        <button id="reset">Reset</button>
+        </div>
+     <div class="last-div">#</div>
+     <h2 class="plus">+</h2>
+     <h2 class="first-dot">.</h2>
+      <h2 class="second-dot">.</h2>
+       <h2 class="third-dot">.</h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script>
+        const maxnum = 100;
+        const minnum = 1;
+        let attempts = 0;
+        let scores = 0;
+        let randomnum;
+     function generatenum (){randomnum = Math.floor(Math.random()*(maxnum-minnum +1 )+minnum);}
+     generatenum();
+     const button = document.getElementById("button");
+     let score = document.getElementById("score");
+     let attempt = document.getElementById("attempt");
+     let best = document.getElementById("best");
+     let bests = Number(localStorage.getItem("bestscore")) || 0;
+    best.textContent = bests;
+     const reset = document.getElementById("reset");
+     console.log(randomnum);
+     let guess = document.getElementById("guess");
+     
+     
+        button.onclick = function(){
+            
+            let input = document.getElementById("input").value;
+            guess.textContent = input;
+            if(input.trim() === ""){
+                alert('Guess a Number');
+                return;
+            }
+            input = Number(input);
+             if(input === randomnum){
+                scores++;
+                score.textContent = scores;
+                attempts++;
+                attempt.textContent = attempts;
+                confetti({
+    particleCount: 500,
+    spread: 900,
+    origin: {  x:0.5 }
+});
+                alert('You guessed correctly! You win.');
+                generatenum();
+            }
+            else if(input < randomnum){
+              attempts++;  
+              attempt.textContent = attempts;
+              alert('Too Low! Try again.');
+            }
+            else if(input > randomnum){
+                attempts++;
+                attempt.textContent = attempts;
+                alert('Too high! Try again.')
+            }
+            
+            else{
+                alert('Please choose a number!');
+                attempts++;
+                attempt.textContent = attempts;
+                
+            }
+            console.log(randomnum);
+            if(bests<scores){
+            bests = scores;
+            localStorage.setItem("bestscore",bests)
+            best.textContent = bests; 
+            
+        }
+        
+        }
+        reset.onclick = function(){
+            attempts = 0;
+            scores = 0;
+            attempt.textContent = attempts;
+            score.textContent = scores;
+            guess.textContent = "";
+            localStorage.removeItem("bestscore");
+            bests = 0;
+            best.textContent = bests;
+        }
+
+    </script>
+</body>
+</html>
