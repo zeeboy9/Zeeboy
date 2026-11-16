@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-papper-scissors</title>
+    <style>
+        body{
+            background: rgb(25,25,25);
+            color:white;
+            font-family: Arial;
+        }
+        #rock{
+        padding: 20px;
+        border-radius:50%;
+        border: 2px solid white;
+        font-size: 70px;
+        background: rgb(25,25,25);
+        cursor: pointer;
+        transition: .4s ease;
+        margin-right: 10px;
+        }
+        #rock:hover{
+            background:rgb(59, 59, 59) ;
+        }
+           #paper{
+        padding: 20px;
+        border-radius:50%;
+        border: 2px solid white;
+         font-size: 70px;
+        background: rgb(25,25,25);
+        cursor: pointer;
+        transition: .4s ease;
+        margin-right: 10px;
+        }
+            #paper:hover{
+            background:rgb(59, 59, 59) ;
+        }
+           #scissors{
+        padding: 20px;
+        border-radius:50%;
+        border: 2px solid white;
+        font-size: 70px;
+        background: rgb(25,25,25);
+        cursor: pointer;
+        transition: .4s ease;
+        }
+            #scissors:hover{
+            background:rgb(59, 59, 59) ;
+        }
+        .product{
+            font-size: 15px;
+            color: red;
+            font-weight: 700;
+        }
+        .reset{
+            display: block;
+            cursor: pointer;
+            background: rgb(255, 0, 0);
+            color: white;
+            border: 1px solid red;
+            padding: 5px 15px;
+        }
+        .extra{
+            font-size: 50px;
+        }
+        .last{
+            color:white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="reset">Reset</button>
+   <p>Rock Paper Scissors</p>
+   <button id="rock">✊</button>
+   <button id="paper">✋</button>
+   <button id="scissors">✌️</button>
+   <h2 class="product"></h2>
+   <h2 class="first-header">Wins:<span class="first-span">0</span></h2>
+   <h2 class="second-header">Losses:<span class="second-span">0</span></h2>
+   <h2 class="third-header">Ties:<span class="third-span">0</span></h2>
+  
+   
+    <script>
+        const rock = document.getElementById("rock");
+        const paper = document.getElementById("paper");
+        const scissors = document.getElementById("scissors");
+        let firstspan = document.querySelector(".first-span");
+        let secondspan = document.querySelector(".second-span");
+        let thirdspan = document.querySelector(".third-span");
+        let product = document.querySelector(".product");
+        let reset = document.querySelector(".reset");
+        let computerMove = '';
+        let win = 0; 
+        let loss = 0;
+        let tie = 0;
+        rock.onclick = function(){
+            const randomNumber = Math.random();
+
+            if(randomNumber>=0 && randomNumber<1/3){
+            computerMove ='✊';
+        }
+        else if(randomNumber>=1/3 && randomNumber<2/3){
+            computerMove ='✋';
+        }
+        else if (randomNumber>=2/3 && randomNumber<1){
+            computerMove ='✌️';
+        }
+        let result = '';
+        if(computerMove === '✊' ){
+            result = 'Tie.';
+            tie++;
+            thirdspan.textContent = tie;
+        }
+        else if(computerMove === '✋'){
+            result = 'You Lose.';
+            loss++;
+            secondspan.textContent = loss;
+        }
+        else if(computerMove === '✌️'){
+            result = 'You Win.';
+            win++;
+            firstspan.textContent = win;
+        }
+              product.innerHTML =`You<span class="extra">✊</span>Computer <span class="extra">${computerMove}</span><br><span class="last">${result}</span>`;
+        }
+        paper.onclick = function(){
+              const randomNumber = Math.random();
+            if(randomNumber>=0 && randomNumber<1/3){
+            computerMove ='✊';
+        }
+        else if(randomNumber>=1/3 && randomNumber<2/3){
+            computerMove ='✋';
+        }
+        else if (randomNumber>=2/3 && randomNumber<1){
+            computerMove ='✌️';
+        }
+        if(computerMove === '✋' ){
+            result = 'Tie.';
+            tie++;
+            thirdspan.textContent = tie;
+        }
+        else if(computerMove === '✌️'){
+            result = 'You Lose.';
+            loss++;
+            secondspan.textContent = loss;
+        }
+        else if(computerMove === '✊'){
+            result = 'You Win.';
+            win++;
+            firstspan.textContent = win;
+        }
+ product.innerHTML =`You<span class="extra">✋</span>Computer <span class="extra">${computerMove}</span><br><span class="last">${result}</span>`;
+        }
+            scissors.onclick = function(){
+            const randomNumber = Math.random();
+            if(randomNumber>=0 && randomNumber<1/3){
+            computerMove ='✊';
+        }
+        else if(randomNumber>=1/3 && randomNumber<2/3){
+            computerMove ='✋';
+        }
+        else if (randomNumber>=2/3 && randomNumber<1){
+            computerMove ='✌️';
+        }
+        if(computerMove === '✋' ){
+            result = 'You Win.';
+            win++;
+            firstspan.textContent = win;
+
+        }
+        else if(computerMove === '✌️'){
+            result = 'Tie.';
+            tie++;
+            thirdspan.textContent = tie;
+        }
+        else if(computerMove === '✊'){
+            result = 'You Lose.';
+            loss++;
+            secondspan.textContent = loss;
+        }
+ product.innerHTML =`You<span class="extra">✌️</span>Computer <span class="extra">${computerMove}</span><br><span class="last">${result}</span>`;
+        }
+        reset.onclick = function(){
+            loss = 0;
+            secondspan.textContent = loss;
+            win = 0;
+            firstspan.textContent = win;
+            tie = 0;
+            thirdspan.textContent = tie;
+            product.textContent = "";
+        }
+    </script>
+</body>
+</html>
